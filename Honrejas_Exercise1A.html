@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*NOTE: output will differ on the size of the browser*/
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+.header {
+    background-color: bisque;
+    padding: 1px;
+    border-color: black;
+    border: 5px;
+    border-style:solid;
+}
+.b a { /* login and sign up code */
+    color: rgb(5, 140, 158);
+    padding-top: 10px;
+    float: right;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.b a:hover {
+    color: rgb(172, 3, 3);
+}
+.bg { /*BG background of form*/
+    border-radius: 20px;
+    background-color: #f09999;
+    padding: 20px;
+    margin: 20px;
+    text-align: right; /*right to align the text with the text bar*/
+    border: 3px solid black;
+
+}
+.c input[type=text] {  /*C text bar under body*/
+    width: 50%;
+    text-align: center; /*text under text bar will start from center*/
+    border-radius: 7px;
+    margin: 10px; /* margin- space of the text bars*/
+    padding: 10px; /* space inside of the text bar*/
+    margin-right: 150px; /*to center the output in the form*/
+    background-color: bisque;
+}
+.d input[type=text] { /*D text bar under header*/
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(245, 241, 237);
+    float: right; 
+    margin-top: 5px;
+}
+.e input[type=submit] { /* search button under header*/
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgb(179, 243, 222);
+    float: right; 
+    margin-top: 5px; 
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+.e input[type=submit]:hover {
+    background-color:#f09999;
+    color: whitesmoke;
+}
+.f input[type=submit] { /* search button under body*/
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px; 
+    margin-right: 130px;
+    background-color: rgb(179, 243, 222);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    cursor: pointer;
+}
+.f input[type=submit]:hover {
+    background-color:blanchedalmond;
+    color: rgb(59, 27, 10);
+}
+.album { /* code for image and description*/
+    float: left;
+    padding-left: 25px; /*space from the margin*/
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    border-color: black;
+    border: 5px;
+    border-style:solid;    
+    margin-top: 3%;
+    text-align: center;
+}
+
+.img { /* code for image only*/
+    border: 5px solid black; 
+    border-radius: 10px;
+}
+.desc {
+    padding: 10px;
+    width: 130px; /*the width size of the text*/
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 230px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+table {
+    margin-top: 20px;
+    width: 100%;
+}
+td {
+    font-size: 20px;
+    padding: 0%;
+
+}
+</style>
+
+<body>
+<form action="Honrejas_Exercise1B.html" target="_blank">
+    <div class="header">
+            <img src="library.png" alt="library logo" width="50px" style="float: left; padding-left: 30px; padding-top: 10px; padding-right: 25px;">
+            <a href="#">
+                <img src="menu.png" alt="menu icon" width="30px" style="float: right; padding-right: 20px; padding-top: 25px;">
+            </a>
+        <div class="b">       
+                <a href="#" class="a" style="padding-left: 15px; padding-right: 30px;">Sign Up</a>
+                <a href="#" class="a" style="padding-right: 20px;">Login</a>
+            <div class="e">
+                <input type="submit" name="save" id="save" value="Search">
+            </div>
+            <div class="d">
+                <input type="text" name="search" id="search" placeholder="Search here..">
+                <h1 style="font-family:'Courier New', Courier, monospace; font-style: oblique; text-align: left; font-size: 35px;"> ONLINE LIBRARY</h1> 
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Welcome to Online Library!</h1>
+
+    <div class="bg"> <!--BG background of form-->
+        <div class="c"> <!--C textbar under body-->
+            <div class="f">       
+                <label for="Btitle"> <b> Book Title: </b></label>
+                <input type="text" id="Btitle" name="Btitle" placeholder="Enter here...">
+                    <br>
+                <label for="Author"><b> Author:</b></label>
+                <input type="text" id="Author" name="Author" placeholder="Enter here...">
+                    <br>
+                <label for="year"><b>Year Published:</b></label>
+                <input type="text" name="year" id="year" placeholder="Enter here...">
+                    <br>
+                <input type="submit" value="Add to Cart">
+                <input type="submit" value="Add to Wishlist">
+                <input type="submit" value="Checkout">
+            </div>
+        </div>
+    </div> 
+</form>
+
+    <table>
+        <tr>
+            <td>
+                <div class="album">
+                    <a href="teenclash.jpg" target="_blank">
+                        <img src="teenclash.jpg" alt="Teen Clash Book" width="150px" class="img">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <a href="mhiamb.jpg" target="_blank">
+                        <img src="mhiamb.jpg" alt="MHIAMB Book" width="150px" height="250px" class="img">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <a href="hih.png" target="_blank">
+                        <img src="hih.png" alt="He's Into Her Book" width="150px" height="250px" class="img">
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <a href="4badboys.jpg" target="_blank">
+                        <img src="4badboys.jpg" alt="The 4 Bad Boys and Me Book" width="150px" class="img">
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="album">
+                    <div class="desc" style="background-color: #eebdbd;">Teen Clash is a wattpad story and it's genre are school and romance.
+                        The author of the book Teen Clash is iDangs.
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <div class="desc" style="background-color: rgb(248, 195, 237);">My Husband is a Mafia Boss by YanaJin.
+                        The genre are Teen Fiction| Mystery/Thriller| Romance| 
+                        Action| Adventure| Sci Fi| Humor.
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <div class="desc" style="background-color: rgb(189, 243, 243);">He's Into Her by Maxine Lat Calibuso (maxinejiji).
+                        The genre are Romantic comedy, Teen, Drama, Coming-of-age.
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="album">
+                    <div class="desc" style="background-color: rgb(173, 247, 171);">It tells the tale of a nerdy loner girl who 
+                        finds herself caught up in the world of the notorious school 
+                        heartthrobs called APAT. The Author of this book is Tina Lata.</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>&copy; Copyright</p>
+    </div>
+
+</body>
+</html>

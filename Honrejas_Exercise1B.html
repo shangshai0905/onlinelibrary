@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*NOTE: Output will differ on the size of the browser*/
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+.header {
+    background-color: bisque;
+    padding: 1px;
+    border-color: black;
+    border: 5px;
+    border-style:solid;
+}
+.b a { /* login and sign up code */
+    color: rgb(5, 140, 158);
+    padding-top: 10px;
+    float: right;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.b a:hover {
+    color: rgb(172, 3, 3);
+}
+.d input[type=text] { /*D text bar under header*/
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(245, 241, 237);
+    float: right; 
+    margin-top: 5px;
+}
+.e input[type=submit] { /* search button under header*/
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgb(179, 243, 222);
+    float: right; 
+    margin-top: 5px; 
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+.e input[type=submit]:hover {
+    background-color:#f09999;
+    color: whitesmoke;
+}
+th, td {
+    border: 5px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+th {
+    background-color:rgb(163, 169, 226);
+}
+table {
+    margin-top: 40px;
+    margin-left: 20px;
+    border-collapse: collapse;
+    width: 95%;
+}
+.img{ /*book image*/
+    float: left; 
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    border-color: black;
+    border: 5px;
+    border-style:solid;    
+    margin-top: 5%;
+    text-align: center;
+}
+</style>
+<body>
+    <form action="Honrejas_Exercise1A.html" target="_blank">
+        <div class="header">
+                <img src="library.png" alt="library logo" width="50px" style="float: left; padding-left: 30px; padding-top: 10px; padding-right: 25px;">
+                    <a href="#">
+                        <img src="menu.png" alt="menu icon" width="30px" style="float: right; padding-right: 20px; padding-top: 25px;">
+                    </a>
+            <div class="b">
+                    <a href="#" class="a" style="padding-left: 15px; padding-right: 30px;">Sign Up</a>
+                    <a href="#" class="a" style="padding-right: 20px;">Login</a>
+                <div class="e">
+                    <input type="submit" name="save" id="save" value="Search">
+                </div>
+                <div class="d">
+                    <input type="text" name="search" id="search" placeholder="Search here..">
+                        <h1 style="font-family:'Courier New', Courier, monospace; font-style: oblique; text-align: left; font-size: 35px;"> ONLINE LIBRARY</h1> 
+                </div> 
+            </div>  
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book Image and Title</th>
+                <th>Author</th>
+                <th>Year Published</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr style="background-color: rgb(189, 243, 243);">
+                <td> 
+                    <div class="img"> 
+                        <a href="hih.png" target="_blank">
+                            <img src="hih.png" alt="He's into Her Book" width="50px"></div>
+                        </a>
+                    <div style="margin-top: 25px;"> He's into Her</div> 
+                </td>
+                <td>Maxine Lat Calibuso (maxinejiji)</td>
+                <td>2012</td>
+            </tr>
+            <tr style="background-color: #f8b5b5;">
+                <td>
+                    <div class="img">
+                        <a href="teenclash.jpg" target="_blank">
+                            <img src="teenclash.jpg" alt="Teen Clash Book" width="50px">
+                        </a>
+                    </div>
+                    <div style="margin-top: 28px;"> Teen Clash</div> 
+                </td>
+                <td> Ilyn Anne Danganan(iDangs)</td>
+                <td>2012</td>
+            </tr>
+            <tr style="background-color: rgb(248, 195, 237);">
+                <td>
+                    <div class="img">
+                        <a href="mhiamb.jpg" target="_blank">
+                            <img src="mhiamb.jpg" alt="My Husband is a Mafia Boss Book" width="50px">
+                    </div>
+                        </a>
+                    <div style="margin-top: 10px;"> My Husband is a Mafia Boss</div> 
+                </td>
+                <td>YanaJin or Yanalovesyouu</td>
+                <td>2020</td>
+            </tr>
+            <tr style="background-color: rgb(173, 247, 171);">
+                <td>
+                    <div class="img">
+                        <a href="4badboys.jpg" target="_blank">
+                            <img src="4badboys.jpg" alt="The 4 Badboys and Me Book" width="50px"></div>
+                        </a>
+                    <div style="margin-top: 15px;"> The 4 Bad Boys and Me</div> 
+                </td>
+                <td>Tina Lata(blue_maiden)</td>
+                <td>2013</td>
+            </tr>
+            <tr style="background-color: #eaf099;">
+                <td>
+                    <div class="img">
+                        <a href="sevethsense.jpg" target="_blank">
+                            <img src="sevethsense.jpg" alt="Seventhsense Book" width="50px">
+                        </a>
+                    </div>
+                    <div style="margin-top: 25px;"> Seventhsense</div> 
+                </td>
+                <td>Ann Lee(purpleyhan)</td>
+                <td>2014</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div class="footer">
+    <p>&copy; Copyright</p>
+</div>
+</body>
+</html>
